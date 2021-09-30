@@ -1,13 +1,30 @@
 section {
-    background-color: lightskyblue;
+    background-color: #FAEBEFFF;
 }
 
 header {
-    background-color: lightslategrey;
+    background-color: #A8D5BAFF;
 }
 
 h1 {
     color: darkslategrey;
     text-align: center;
     font-size: 105px;
+}
+
+.odd {
+    background-color: #D7A9E3FF;
+    color: #fff;
+}
+
+.even {
+    background-color: #8BBEE8FF;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    font-weight: 100;
+    font-family: cursive;
+    color: lightskyblue;
 }
