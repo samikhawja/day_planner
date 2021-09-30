@@ -1,3 +1,9 @@
+header {
+    background-color: lightgrey;
+}
+
 h1 {
-    color: red;
+    color: darkslategrey;
+    text-align: center;
+    font-size: 105px;
 }
