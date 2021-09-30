@@ -45,7 +45,7 @@ This webpage is up-to-date every second with the time and date and will allow yo
 <!-- USAGE EXAMPLES -->
 ## Code Snippet
 
-While coding this generator, this piece of code / function proved to be the hardest to figure out. I had to create a function that would display the question then display the next question after the right answer was selected. I had to use event listeners, text content and many more just to display a question! This part of the javascript wasn't easy but it was fun because of the challenge.
+While coding this generator, this piece of code / function proved to be the hardest to figure out. I had to create a function that would display the question then display the next question after the right answer was selected. I had to use event listeners, text content and many more just to display a question! This part of the javascript wasn't easy but it was fun because of the challenge!
 ```
 function displayQuestion() {
 		currentQuestionElement.textContent = currentQuestionIndex + 1;
