@@ -1,14 +1,18 @@
 var today = moment();
 
 $("#date").text(today.format("MMM Do, YYYY"));
-// $(".time").text(today.format("LTS"));
+
 setInterval(myTimer);
 
 function myTimer() {
   const d = new Date();
   document.getElementById("time").innerHTML = d.toLocaleTimeString();
 }
-// window.setInterval(function () {
-//     $(".time").html(today.format("LTS"));
-// }, 1000);
 
+$(".saveBtn").on("click", function(){
+    var value = $(this).siblings(".form-control").val()
+    var key = $(this).parent().attr("id")
+    localStorage.setItem(key, value)
+    console.log(value, key)
+})
+$("#9 .form-control").val(localStorage.getItem("9"))
