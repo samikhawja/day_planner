@@ -85,6 +85,7 @@ Live Link: [Password Generator](https://samikhawja.github.io/day_planner/)
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * Taylor Hackbart
+* Vince Lee
 * [W3Schools](https://www.w3schools.com/)
 * [StackOverflow](https://stackoverflow.com/)
 * [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
