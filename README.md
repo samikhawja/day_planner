@@ -45,27 +45,20 @@ This webpage is up-to-date every second with the time and date and will allow yo
 <!-- USAGE EXAMPLES -->
 ## Code Snippet
 
-While coding this generator, this piece of code / function proved to be the hardest to figure out. I had to create a function that would display the question then display the next question after the right answer was selected. I had to use event listeners, text content and many more just to display a question! This part of the javascript wasn't easy but it was fun because of the challenge!
+While coding this day planner, this piece of code / function proved to be the hardest to figure out. I had to create a function that would first display military time in order to compare it with my time slots and turn those strings into numbers with parse! I then had to create an if statement in order to change the colors of the time slots depending on the current time of day. This part of the javascript wasn't easy but it was fun because of the challenge!
 ```
-function displayQuestion() {
-		currentQuestionElement.textContent = currentQuestionIndex + 1;
-    var currentQuestion = questions[currentQuestionIndex];
-    questionElement.textContent = currentQuestion.question
-    for(var i=0; i<questions[currentQuestionIndex].selections.length; i++){
-        var newButton = document.createElement("button");
-        selectionsElement.append(newButton);
-        newButton.textContent = currentQuestion.selections[i];
-        newButton.setAttribute("class", "button" + [i]);
-        newButton.setAttribute("value", currentQuestion.selections[i])
-        newButton.addEventListener('click', function(e) {
-            if (e.target.value !== currentQuestion.answer) {
-            		time -= 5;
-                return;
-            }
-            
-            handleCorrectAnswer();
-        });
-    }
+function timeSlots() {
+    var time = parseInt(moment().format("k"))
+    $(".col-12").each(function(){
+        var timeSlot = parseInt($(this).attr("id"))
+        if(time > timeSlot) {
+            $(this).addClass("future")
+        }else if(time == timeSlot) {
+            $(this).addClass("present")
+        }else {
+            $(this).addClass("past")
+        }
+    })
 }
 ```
 
