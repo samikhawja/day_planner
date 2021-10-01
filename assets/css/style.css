@@ -28,3 +28,15 @@ footer {
     font-family: cursive;
     color: lightskyblue;
 }
+
+.past {
+    background-color: red;
+}
+
+.present {
+    background-color: #fff;
+}
+
+.future {
+    background-color: blue;
+}
